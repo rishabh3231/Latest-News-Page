@@ -1,0 +1,21 @@
+{
+  "name": "Latest news Page",
+  "version": "1.0.0",
+  "description": "The Latest Breaking and Most Popular Sport News",
+  "main": "index.js",
+  "author": "James Gosbell",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-jslint": "^1.0.5",
+    "gulp-minify": "0.0.14",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1"
+  }
+}

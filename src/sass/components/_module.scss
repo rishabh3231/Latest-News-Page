@@ -1,0 +1,40 @@
+.module {
+    width: 100%;
+    border-top: 3px solid $grey;
+    margin-bottom: 30px;
+    overflow: hidden;
+    float: left;
+    clear: both;
+
+    &--width50 {
+      @media (min-width: $screen-sm) {
+          width: 50%;
+      }
+    }
+
+    &__header {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#305e8f+0,1a4474+100 */
+        background: $dark-blue; /* Old browsers */
+        background: -moz-linear-gradient(left, $dark-blue 0%, #1a4474 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, $dark-blue 0%,#1a4474 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, $dark-blue 0%,#1a4474 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e8f', endColorstr='#1a4474',GradientType=1 ); /* IE6-9 */
+        margin: 2px 0 0 0;
+        padding: 7px 10px 8px 10px;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__content{
+      overflow: hidden;
+
+      &--border {
+        margin-top: 4px;
+        padding-bottom: 25px;
+        border: 1px solid $grey;
+      }
+    }
+}

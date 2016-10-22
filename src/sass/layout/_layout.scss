@@ -1,0 +1,8 @@
+.l-container {
+  padding: 20px;
+  margin: 0 auto;
+
+  @media (min-width: $screen-sm) {
+      max-width: $screen-sm;
+  }
+}

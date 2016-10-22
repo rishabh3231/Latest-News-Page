@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &::before,
+  &::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: $background-colour;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+h1, h2, h3{
+  margin: 0;
+}
+h1 {
+  font-size: rem(18);
+  font-weight: $heading-font-weight;
+  line-height: $base-line-height;
+}
+h2{
+  font-size: rem(16);
+  font-weight: $heading-font-weight;
+  line-height: $base-line-height;
+}
+
+h3 {
+    font-family: $heading-font-family;
+    font-size: rem(14);
+    line-height: $base-line-height;
+}
+a{
+  color: $blue;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
