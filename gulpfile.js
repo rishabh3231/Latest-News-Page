@@ -84,6 +84,10 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', ['clean'], function () {
+  gulp.start('html', 'sass', 'js', 'vendor-js');
+});
+
+gulp.task('start', ['clean'], function () {
   gulp.start('html', 'sass', 'js', 'vendor-js', 'server');
 });
 

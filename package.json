@@ -6,7 +6,8 @@
   "author": "James Gosbell",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",
