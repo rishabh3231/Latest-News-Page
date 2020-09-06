@@ -10,7 +10,17 @@ var gulp = require('gulp'),
     jslint = require('gulp-jslint'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    sync = require('browser-sync');
+
+// serve files to local dev server
+gulp.task('server', function () {
+  sync.init({
+    server: {
+      baseDir: './dist',
+    },
+  });
+});
 
 // Clean/Remove dist
 gulp.task('clean', function () {
@@ -74,7 +84,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', ['clean'], function () {
-  gulp.start('html', 'sass', 'js', 'vendor-js');
+  gulp.start('html', 'sass', 'js', 'vendor-js', 'server');
 });
 
 gulp.task('default', ['build']);
